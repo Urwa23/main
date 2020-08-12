@@ -115,29 +115,54 @@ nav{
         flex-direction: column;
         /* background-color: green; */
     }
+   
 }
 
 
 .image{
    /* max-height: 90vh; */
-   background-image: url("main3.jpg");
+   background-image: url("laptop2.jpg");
+   /* background-attachment: fixed; */
 
    /* Full height */
    height: 90vh;
  
    /* Center and scale the image nicely */
-   background-position: center;
-   background-repeat: no-repeat;
+   /* background-position: center;
+   background-repeat: no-repeat; */
    background-size: cover;
+   /* display: flex;
+   margin: auto;
+   justify-content: center; */
     /* background: repeat-y; */
     /* background: no-repeat; */
 }
+.titledescription{
+    display: flex;
+    /* border: 2px solid blue; */
+    flex-direction: column;
+
+    text-align: center;
+    width: 80%;
+    margin: auto ;
+    
+    padding-top: 100px;
+    
+    /* padding-top: 300px; */
+}
+.titledescription p{
+    padding-top: 90px;
+    font-size: 1.4rem;
+    color: white;
+}
+
+
 .image p{
     display: flex;
     justify-content: center;
     align-content: center;
     text-align: center;
-    color: wheat;
+    color: white;
     align-items: center;
     /* background-color: wheat; */
   
@@ -152,6 +177,7 @@ nav{
     transition-delay:0.05s ;
 
 }
+
 .container{
     display: flex;
     /* flex-direction: column; */
@@ -162,6 +188,7 @@ nav{
     /* border: 2px solid red; */
     margin-top: 7rem;
     width:75%;
+    /* border: 3px solid grey; */
     /* flex-direction: column; */
 }
 .description{
@@ -176,6 +203,34 @@ nav{
     scale: 0.95;
     /* border: 2px solid gray;  */
 }
+.description-bw{
+    /* background-color: brown */
+    /* margin: 20px 10px auto 10px; */
+    /* margin-left: 700px; */
+    margin-bottom: 2rem;
+    /* border: 2px solid pink; */
+    opacity: 0;
+    transform: translateX(200px);
+    transition: 0.5s all cubic-bezier(0.1,-0.31, 0.68, 1.33);
+    /* transition-duration:2s ; */
+    transition-delay:0.05s ;
+    scale: 0.95;
+    width: 50%;
+    /* border: 2px solid gray;  */
+}
+.images-features-bw img{
+
+    width: 500px;
+    height: 400px;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 0.5s all cubic-bezier(0.1,-0.31, 0.68, 1.33);
+    transition-delay:0.05s ;
+    /* width: 70%; */
+    /* margin-left: 50px; */
+    padding: 0%;
+}
+
 
 .description-after{
     opacity: 1;
@@ -259,5 +314,15 @@ ul a{
         /* background-color: palegoldenrod; */
         justify-content: center;
         align-items: center;
+    }
+    .images-features img{
+        width:300px;
+        height: 200px;
+        background-color:pink;
+    }
+    .images-features-bw img{
+        width:300px;
+        height: 200px;
+        /* opacity: 10%; */
     }
 }
